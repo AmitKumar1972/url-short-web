@@ -7,7 +7,7 @@ export default function SignupBox() {
 
       <div className="flex flex-col mb-4 gap-3">
         <label htmlFor="name" className="text-base font-semibold block">
-          Full Name
+          Username
         </label>
         <input type="text" name="name" id="name" placeholder="Enter your full name" className="w-full px-4 py-2 border rounded-md focus:outline-none focus:border-blue-500" />
       </div>
@@ -30,7 +30,7 @@ export default function SignupBox() {
         <label htmlFor="password" className="text-base font-semibold block">
           Confirm Password
         </label>
-        <input type="password" name="password" id="password" placeholder="Enter your password" className="w-full px-4 py-2 border rounded-md focus:outline-none focus:border-blue-500" />
+        <input type="password" name="password" id="password" placeholder="Enter password again" className="w-full px-4 py-2 border rounded-md focus:outline-none focus:border-blue-500" />
       </div>
 
       <button type="submit" className="mt-6 bg-blue-500 text-white py-2 px-4 rounded-full w-full flex items-center justify-center">
