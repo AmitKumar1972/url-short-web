@@ -1,4 +1,3 @@
-import Image from 'next/image'
 import NavBar from './(components)/navbar'
 import ImageInput from './(components)/ImageInput'
 import ThreeBox from './(components)/ThreeBox'
@@ -43,8 +42,6 @@ export default function Home() {
           <p className="text-sm mt-2">Made with ❤️ by Code Dash</p>
         </div>
       </footer>
-
-
     </div>
   )
 }
