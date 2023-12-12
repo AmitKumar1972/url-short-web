@@ -3,11 +3,12 @@ import ImageInput from './(components)/ImageInput'
 import ThreeBox from './(components)/ThreeBox'
 import LowContent from './(components)/LowContent'
 import LowContent2 from './(components)/LowContent2'
+import Footer from './(components)/Footer'
 
 export default function Home() {
   return (
     <div className='flex flex-col'>
-      <div className='flex flex-col bg-slate-100 h-full'>
+      <div className='flex flex-col bg-blue-50 h-full'>
         <div>
           <NavBar />
         </div>
@@ -36,12 +37,7 @@ export default function Home() {
         </div>
       </div>
 
-      <footer className="bg-gray-800 text-white py-4">
-        <div className="container mx-auto text-center">
-          <p className="text-sm">&copy; 2023 Dashly. All rights reserved.</p>
-          <p className="text-sm mt-2">Made with ❤️ by Code Dash</p>
-        </div>
-      </footer>
+      <Footer />
     </div>
   )
 }

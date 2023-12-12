@@ -1,12 +1,13 @@
 import Image from "next/image";
 import NavBar from "../(components)/navbar";
 import SignBox from "../(components)/SigninBox";
+import Footer from "../(components)/Footer";
 
 export default function signin() {
   return (
     <div className="flex flex-col">
       <NavBar/>
-      <div className="w-full h-auto flex flex-row justify-evenly" style={{ backgroundImage: "url(https://rx.link/assets/img/main-banner-bg.png)" }}>
+      <div className="w-full h-auto flex flex-row justify-evenly bg-blue-50" >
         <Image 
         src="/login.svg"
         width={600}
@@ -30,12 +31,7 @@ export default function signin() {
         </div>
       </div>
 
-      <footer className="bg-gray-800 text-white py-4">
-        <div className="container mx-auto text-center">
-          <p className="text-sm">&copy; 2023 Dashly. All rights reserved.</p>
-          <p className="text-sm mt-2">Made with ❤️ by Code Dash</p>
-        </div>
-      </footer>
+      <Footer />
     </div>
   )
 
