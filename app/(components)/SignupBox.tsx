@@ -1,39 +1,39 @@
 export default function SignupBox() {
   return (
-    <div className="max-w-md mx-auto mt-10 shadow-xl bg-white py-8 px-6 rounded-lg">
-      <h3 className="text-3xl font-bold text-center mb-6">
+    <div className="mx-auto shadow-xl bg-white py-8 px-6 rounded-lg">
+      <h3 className="text-2xl font-bold text-center mb-4">
         Sign Up
       </h3>
 
-      <div className="flex flex-col mb-4 gap-3">
-        <label htmlFor="name" className="text-base font-semibold block">
+      <div className="flex flex-col mb-4 gap-2">
+        <label htmlFor="name" className="text-base font-medium block">
           Username
         </label>
         <input type="text" name="name" id="name" placeholder="Enter your full name" className="w-full px-4 py-2 border rounded-full focus:outline-none focus:border-blue-500" />
       </div>
 
-      <div className="flex flex-col mb-4 gap-3">
-        <label htmlFor="email" className="text-base font-semibold block">
+      <div className="flex flex-col mb-4 gap-2">
+        <label htmlFor="email" className="text-base font-medium block">
           Email
         </label>
         <input type="email" name="email" id="email" placeholder="Enter your email" className="w-full px-4 py-2 border rounded-full focus:outline-none focus:border-blue-500" />
       </div>
 
-      <div className="mb-4 flex flex-col gap-3">
-        <label htmlFor="password" className="text-base font-semibold block">
+      <div className="mb-4 flex flex-col gap-2">
+        <label htmlFor="password" className="text-base font-medium block">
           Password
         </label>
         <input type="password" name="password" id="password" placeholder="Enter your password" className="w-full px-4 py-2 border rounded-full focus:outline-none focus:border-blue-500" />
       </div>
 
-      <div className="mb-4 flex flex-col gap-3">
-        <label htmlFor="password" className="text-base font-semibold block">
+      <div className="mb-4 flex flex-col gap-2">
+        <label htmlFor="password" className="text-base font-medium block">
           Confirm Password
         </label>
         <input type="password" name="password" id="password" placeholder="Enter password again" className="w-full px-4 py-2 border rounded-full focus:outline-none focus:border-blue-500" />
       </div>
 
-      <button type="submit" className="mt-6 bg-blue-500 text-white py-2 px-4 rounded-full w-full flex items-center justify-center">
+      <button type="submit" className="mt-5 bg-blue-500 text-white py-2 px-4 rounded-full w-full flex items-center justify-center">
         Sign Up
         <span className="ml-2">
           <svg width="22" height="22" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg">

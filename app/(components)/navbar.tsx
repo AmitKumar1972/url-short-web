@@ -4,7 +4,7 @@ import Link from 'next/link';
 export default function NavBar() {
 
   return (
-    <div className='flex flex-row px-4 text-center items-center justify-between bg-blue-50'>
+    <div className='flex flex-row p-3 text-center items-center justify-between bg-blue-50'>
 
       {/* Logo and Name */}
       <div className='gap-3 text-center items-center flex flex-row'>
@@ -18,7 +18,7 @@ export default function NavBar() {
       </div>
 
       {/* Auth Buttons */}
-      <div className='flex py-4 items-center flex-row'>
+      {/* <div className='flex items-center flex-row'>
         <div className='px-1'>
           <Link href='/signin' className='px-6 py-2 rounded-full border-blue-500 text-blue-500 font-medium hover:bg-blue-500 hover:text-white'>
             Login
@@ -29,7 +29,7 @@ export default function NavBar() {
             Register
           </Link>
         </div>
-      </div>
+      </div> */}
     </div>
   )
 }

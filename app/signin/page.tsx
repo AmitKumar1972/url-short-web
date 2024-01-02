@@ -1,7 +1,6 @@
 import Image from "next/image";
 import NavBar from "../(components)/navbar";
 import SignBox from "../(components)/SigninBox";
-import Footer from "../(components)/Footer";
 
 export default function signin() {
   return (
@@ -10,11 +9,11 @@ export default function signin() {
       <div className="w-full h-auto flex flex-row justify-evenly bg-blue-50" >
         <Image 
         src="/login.svg"
-        width={600}
-        height={600}
+        width={550}
+        height={550}
         alt="Login image"
         />
-        <div className="py-9 h-auto w-1/3">
+        <div className="py-9 h-screen w-1/3">
         <SignBox />
         </div>
       </div>
