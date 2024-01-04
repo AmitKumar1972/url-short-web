@@ -13,7 +13,7 @@ export default function signin() {
         height={550}
         alt="Login image"
         />
-        <div className="py-9 h-screen w-1/3">
+        <div className="py-9 h-screen w-1/4">
         <SignBox />
         </div>
       </div>
