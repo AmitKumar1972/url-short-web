@@ -1,109 +1,60 @@
-// import Image from "next/image";
+import { TrashIcon } from "@heroicons/react/16/solid";
+import DashboardSidebar from "../(components)/DashboardSidebar";
 
-// export default function Dashboard() {
-//   return (
-//     <div className="flex flex-col lg:flex-row lg:gap-12">
-//       <div className="flex flex-col border-r-2 lg:min-h-screen w-auto">
-//         <div className="m-9">
-//           <p className="text-2xl font-bold">Url Shortener</p>
-//           <div className="flex gap-1">
-//             <p className="text-sm">Powered by</p>
-//             <Image
-//               src="/logo2.svg"
-//               width={20}
-//               height={20}
-//               alt="Logo"
-//             />
-//           </div>
-//         </div>
-//         <div className="flex flex-col">
-//           <div className="flex justify-center">
-//             <button className="flex items-center gap-2 w-full h-full hover:bg-blue-100 py-2 px-9">
-//               <Image
-//                 src="/link.png"
-//                 width={15}
-//                 height={15}
-//                 alt="Logo"
-//               />
-//               <span className="hidden lg:inline-block">My Links</span>
-//             </button>
-//           </div>
-//           <div className="flex justify-center">
-//             <button className="flex items-center gap-2 w-full h-full py-2 px-9 hover:bg-blue-100">
-//               <Image
-//                 src="/settings.png"
-//                 width={15}
-//                 height={15}
-//                 alt="Logo"
-//               />
-//               <span className="hidden lg:inline-block">Settings</span>
-//             </button>
-//           </div>
-//         </div>
-//         <div>
-//           User Profile
-//         </div>
-//       </div>
-//       <div className="flex-grow"></div>
-//     </div>
-//   );
-// }
-
-
-import Image from "next/image";
+const dummyLinks = [
+  {
+    id: 1,
+    shortLink: "https://dash.ly/uhjkluy",
+    originalLink: "https://test-review-ap.myshopify.com/admin/oauth/authorize?client_id=570095e20",
+    clicks: 25,
+    dateCreated: "Sep 24, 2024",
+  },
+  {
+    id: 2,
+    shortLink: "https://dash.ly/uhjkluy",
+    originalLink: "https://test-review-ap.myshopify.com/admin/oauth/authorize?client_id=570095e20b1937221e5c687jknejkcnwkejncwekjncwejknfiwhruih23iodjawkdmqwlknfasdlcnksdmkfnqweiofjiowejo",
+    clicks: 10,
+    dateCreated: "Sep 24, 2024",
+  },
+  {
+    id: 3,
+    shortLink: "https://dash.ly/uhjkluy",
+    originalLink: "https://test-review-ap.myshopify.com/admin/oauth/authorize?client_id=570095e20b1937221e",
+    clicks: 32,
+    dateCreated: "Sep 24, 2024",
+  },
+];
 
 export default function Dashboard() {
   return (
     <div className="flex flex-col lg:flex-row lg:gap-12">
-      <div className="flex flex-col border-r-2 lg:min-h-screen w-auto">
-        <div className="m-9">
-          <p className="text-2xl font-bold">Url Shortener</p>
-          <div className="flex gap-1">
-            <p className="text-sm">Powered by</p>
-            <Image
-              src="/logo2.svg"
-              width={20}
-              height={20}
-              alt="Logo"
-            />
-          </div>
-        </div>
-        <div className="flex flex-col">
-          <div className="flex justify-center">
-            <button className="flex items-center gap-2 w-full h-full hover:bg-blue-100 py-2 px-9">
-              <Image
-                src="/link.png"
-                width={15}
-                height={15}
-                alt="Link Icon"
-              />
-              <span className="hidden lg:inline-block">My Links</span>
-            </button>
-          </div>
-          <div className="flex justify-center">
-            <button className="flex items-center gap-2 w-full h-full py-2 px-9 hover:bg-blue-100">
-              <Image
-                src="/settings.png"
-                width={15}
-                height={15}
-                alt="Settings Icon"
-              />
-              <span className="hidden lg:inline-block">Settings</span>
-            </button>
-          </div>
-        </div>
-        <div className="flex flex-col items-center mt-4">
-          <Image
-            src="/profile-image.jpg" // Replace with the actual path to the user's profile image
-            alt="User Profile"
-            className="w-16 h-16 rounded-full mb-2"
-          />
-          <p className="text-sm font-semibold">John Doe</p>
-          <p className="text-xs text-gray-500">john.doe@example.com</p>
+      <DashboardSidebar />
+      <div className="w-full mt-10 flex flex-col">
+        <div className="text-2xl font-bold">My Links</div>
+        <div className="mt-4 mr-9 overflow-auto rounded-lg shadow">
+          <table className="w-full border-collapse bg-white border rounded-lg">
+            <thead className="bg-gray-300">
+              <tr>
+                <th className="py-3 px-4 text-sm font-semibold text-left border-b">SHORT LINK</th>
+                <th className="py-3 px-4 text-sm font-semibold text-left border-b">ORIGINAL LINK</th>
+                <th className="py-3 px-4 text-sm font-semibold text-left border-b">CLICKS</th>
+                <th className="py-3 px-4 text-sm font-semibold text-left border-b">DATE CREATED</th>
+              </tr>
+            </thead>
+
+            <tbody>
+              {dummyLinks.map((link, index) => (
+                <tr key={link.id} className={index % 2 === 0 ? 'bg-gray-100' : 'bg-white'}>
+                  <td className="py-3 px-4 text-sm text-gray-700">{link.shortLink}</td>
+                  <td className="py-3 px-4 text-sm text-gray-700 break-all">{link.originalLink}</td>
+                  <td className="py-3 px-4 text-sm text-gray-700">{link.clicks}</td>
+                  <td className="py-3 px-4 text-sm text-gray-700">{link.dateCreated}</td>
+                </tr>
+              ))}
+            </tbody>
+          </table>
         </div>
       </div>
-      <div className="flex-grow"></div>
     </div>
   );
 }
-
