@@ -2,7 +2,7 @@ import Image from "next/image";
 
 export default function DashboardSidebar() {
   return (
-    <div className="flex flex-col border-r-2 lg:min-h-screen w-auto">
+    <div className="hidden lg:flex lg:flex-col border-r-2 lg:min-h-screen w-auto">
 
       {/* Heading Data */}
       <div className="m-9">
