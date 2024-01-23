@@ -3,11 +3,19 @@ import Image from "next/image";
 export default function ImageInput() {
   return (
     <>
+      <div>
+        <Image
+          src='/illustration.png'
+          alt='Image'
+          width={500}
+          height={500}
+        />
+      </div>
       <div className='ml-12 py-20'>
-        <p className='text-2xl font-bold justify-evenly'>Share links and track Links</p>
-        <p className='mt-6 font-sans text-base font-medium'>Shorten and personalize any link.</p>
-        <p className='font-sans text-base font-medium mt-4'>Get real time traffic statistics for your links. Free Service</p>
-        <div className='flex items-center mt-8'>
+        <p className='text-2xl font-bold justify-evenly'>Shrink your link, Expand your reach</p>
+        <p className='mt-6 font-sans text-base font-medium'>Create New Link</p>
+        <p className='font-sans text-base font-medium'>Create, shorten and manage your links</p>
+        <div className='flex items-center mt-2'>
           <input
             type='text'
             id='linkInput'
@@ -19,14 +27,6 @@ export default function ImageInput() {
           </button>
         </div>
         <p className="text-xs mt-2 text-gray-400">* By Clicking Shorten you are agreeing to our <span className="underline">Terms of Service</span> and <span className="underline">Privacy</span></p>
-      </div>
-      <div>
-        <Image
-          src='/7.png'
-          alt='Image'
-          width={500}
-          height={500}
-        />
       </div>
     </>
   )
