@@ -7,25 +7,22 @@ import Footer from './(components)/Footer'
 
 export default function Home() {
   return (
-    <div className='flex flex-col'>
-      <div className='flex flex-col bg-blue-50 h-full'>
+    <div className='flex flex-col items-center'>
+      <div className='flex flex-col bg-blue-50 h-full w-full'>
         <div>
           <NavBar />
         </div>
-        <div className='flex flex-row justify-evenly'>
-          <ImageInput />
-        </div>
+        <ImageInput />
       </div>
-      <div className="flex flex-col items-center mt-20">
-        <p className="text-2xl font-bold text-center">Free URL Shortener and Branded URLs</p>
-        <p className="text-2xl font-bold text-center">with Great Analytics Tools</p>
-        <p className='mt-5 font-sans text-base font-normal'>Dashly let you understand more about click through of your links. we give you a huge marketing tool with advanced URL tracking</p>
-        <p className='font-sans text-base font-normal'>system for free without any hidden commitments. Why? Because we believe that the best thing should be free.</p>
+      <div className="flex flex-col items-center justify-center pt-10 max-w-md">
+        <p className="text-2xl font-bold">Free URL Shortener and Branded URLs</p>
+        <p className="text-2xl font-bold">with Great Analytics Tools</p>
+        <p className='mt-5 font-sans text-base font-normal text-center'>Dashly let you understand more about click through of your links. we give you a huge marketing tool with advanced URL tracking system for free without any hidden commitments. Why? Because we believe that the best thing should be free.</p>
       </div>
       <ThreeBox />
       <LowContent />
       <LowContent2 />
-      <div className="mb-10" style={{ backgroundImage: "url(https://rx.link/assets/img/call-to-action-bg.svg)" }}>
+      <div className="mb-10 w-full" style={{ backgroundImage: "url(https://rx.link/assets/img/call-to-action-bg.svg)" }}>
         <div className="container text-center p-10">
           <h2 className="text-dark text-3xl font-bold py-3 my-0 pt-0 pb-3">It&apos;s easy to get Started</h2>
           <p className="font-medium text-base pb-2">And it&apos;s free. Two things everyone loves.</p>
@@ -36,7 +33,6 @@ export default function Home() {
           </div>
         </div>
       </div>
-
       <Footer />
     </div>
   )

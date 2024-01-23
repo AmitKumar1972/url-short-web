@@ -18,7 +18,7 @@ export default function NavBar() {
       </div>
 
       {/* Auth Buttons */}
-      {/* <div className='flex items-center flex-row'>
+      <div className='flex items-center flex-row'>
         <div className='px-1'>
           <Link href='/signin' className='px-6 py-2 rounded-full border-blue-500 text-blue-500 font-medium hover:bg-blue-500 hover:text-white'>
             Login
@@ -29,7 +29,7 @@ export default function NavBar() {
             Register
           </Link>
         </div>
-      </div> */}
+      </div>
     </div>
   )
 }
