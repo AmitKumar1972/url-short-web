@@ -4,12 +4,12 @@ import Link from 'next/link';
 export default function NavBar() {
 
   return (
-    <div className='flex flex-row p-3 text-center items-center justify-between bg-blue-50'>
+    <div className='flex flex-row p-3 text-center items-center justify-between w-full'>
 
       {/* Logo and Name */}
       <div className='gap-3 text-center items-center flex flex-row'>
         <Image
-          src="/logo2.svg"
+          src="/logo5.svg"
           width={35}
           height={35}
           alt="Logo"
