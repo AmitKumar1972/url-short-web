@@ -2,16 +2,15 @@ import Image from "next/image";
 
 export default function LowContent() {
   return (
-    <div className="flex flex-row justify-center mt-20 gap-20">
-      <div className="ml-28 h-full w-full">
-        <Image
-          src="/AnalyticsImage.webp"
-          alt="Analytics Image"
-          width={550}
-          height={430}
-        />
-      </div>
-      <div className="mr-32">
+    <div className="flex md:flex-row flex-col justify-center max-w-[1000px] items-center p-10 gap-20">
+      <Image
+        src="/AnalyticsImage.webp"
+        alt="Analytics Image"
+        width={400}
+        height={400}
+        className=""
+      />
+      <div>
         {/* <p className="text-2xl font-bold">Gain Insight into Your Shortened URLs</p> */}
         <p className="bg-lavender text-pink-600 font-bold rounded-full py-1 px-3 inline-flex items-center justify-center text-sm bg-pink-100">Link Analytics</p>
         <p className="text-3xl font-bold mt-8">Unleash the Power of Link Analytics</p>

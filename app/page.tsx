@@ -8,13 +8,13 @@ import Footer from './(components)/Footer'
 export default function Home() {
   return (
     <div className='flex flex-col items-center'>
-      <div className='flex flex-col bg-blue-50 h-full w-full'>
-        <div>
+      <div className='bg-blue-50 h-full w-full'>
+        <div className='flex flex-col max-w-8xl'>
           <NavBar />
+          <ImageInput />
         </div>
-        <ImageInput />
       </div>
-      <div className="flex flex-col items-center justify-center pt-10 max-w-md">
+      <div className="flex flex-col items-center justify-center p-10 max-w-[1000px]">
         <p className="text-2xl font-bold">Free URL Shortener and Branded URLs</p>
         <p className="text-2xl font-bold">with Great Analytics Tools</p>
         <p className='mt-5 font-sans text-base font-normal text-center'>Dashly let you understand more about click through of your links. we give you a huge marketing tool with advanced URL tracking system for free without any hidden commitments. Why? Because we believe that the best thing should be free.</p>
