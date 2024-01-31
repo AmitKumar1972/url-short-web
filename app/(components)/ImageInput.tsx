@@ -28,8 +28,6 @@ export default function ImageInput() {
       const responseData = await response.json();
       setShortenedUrl(responseData.shortUrl);
       console.log('Response Data:', responseData);
-
-      // Handle response, maybe show a success message or redirect
     } catch (error) {
       // Handle error, maybe show an error message
       console.error('Error shortening link:', error);
@@ -40,7 +38,6 @@ export default function ImageInput() {
     navigator.clipboard.writeText(shortenedUrl)
       .then(() => {
         toast.success('URL copied to clipboard successfully!');
-        // Optionally, you can show a message indicating successful copy
       })
       .catch((error) => {
         toast.error('Failed to copy URL to clipboard.');
