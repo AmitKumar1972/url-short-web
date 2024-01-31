@@ -2,10 +2,10 @@ import Image from "next/image";
 
 export default function ThreeBox() {
   return (
-    <div className='flex flex-col md:flex-row gap-20 justify-center mt-10 mb-10'>
+    <div className='flex flex-col md:flex-row lg:gap-20 gap-7 justify-center mt-4 mb-4'>
       {/* 1st box */}
       <div className='flex flex-col md:flex-row items-center'>
-        <div className='bg-blue-400 px-5 py-3 md:py-0 md:px-0 md:w-24 flex items-center justify-center'>
+        <div className='px-5 py-3 md:py-0 md:px-0 flex items-center justify-center'>
           <Image
             src="/Url-shortener-logo.svg"
             alt="Link analytics"
