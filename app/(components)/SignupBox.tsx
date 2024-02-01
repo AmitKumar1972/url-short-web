@@ -57,7 +57,7 @@ export default function SignupBox() {
   };
 
   return (
-    <div className="mx-auto shadow-xl bg-white py-8 px-6 rounded-lg">
+    <div className="mx-auto shadow-2xl bg-white py-8 px-6 rounded-lg w-full max-w-md">
       <h3 className="text-2xl font-bold text-center mb-4">
         Sign Up
       </h3>
