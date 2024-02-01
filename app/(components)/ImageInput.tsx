@@ -49,8 +49,8 @@ export default function ImageInput() {
   };
 
   return (
-    <div className='flex md:flex-row flex-col-reverse justify-center items-center'>
-      <div>
+    <div className='flex md:flex-row flex-col-reverse justify-center items-center px-4'>
+      <div className="">
         <Image
           src='/illustration.png'
           alt='Image'
@@ -69,7 +69,7 @@ export default function ImageInput() {
               <input
                 type='text'
                 id='originalUrl'
-                className='flex-1 pr-28 pl-4 py-3 text-lg outline-none rounded-2xl border mt-1 w-full'
+                className='flex-1 pr-28 pl-4 py-5 text-lg outline-none rounded-2xl border mt-1 w-full bg-zinc-100'
                 value={inputValue}
                 readOnly
               />
@@ -82,7 +82,7 @@ export default function ImageInput() {
                 <input
                   type='text'
                   id='shortenedUrl'
-                  className='flex-1 pl-4 py-5 text-lg outline-none rounded-2xl w-full border mt-1'
+                  className='flex-1 pl-4 py-5 text-lg outline-none rounded-2xl w-full border mt-1 bg-zinc-100'
                   value={shortenedUrl}
                   readOnly
                 />

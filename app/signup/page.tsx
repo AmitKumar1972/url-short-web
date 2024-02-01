@@ -4,8 +4,8 @@ import SignupBox from "../(components)/SignupBox";
 
 export default function signup() {
   return (
-    <div className="flex flex-col">
-      <div>
+    <div className="flex flex-col items-center w-full mx-auto">
+      <div className='w-full max-w-5xl'>
         <NavBar />
       </div>
       <div className="flex flex-col md:flex-row bg-blue-50 md:w-full md:items-center">

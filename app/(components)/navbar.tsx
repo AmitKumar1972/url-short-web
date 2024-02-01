@@ -4,7 +4,7 @@ import Link from 'next/link';
 export default function NavBar() {
 
   return (
-    <div className='flex flex-row p-3 text-center items-center justify-between w-full'>
+    <div className='flex justify-between p-3 text-center items-center w-full'>
 
       {/* Logo and Name */}
       <div className='gap-3 text-center items-center flex flex-row'>

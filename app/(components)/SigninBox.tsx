@@ -1,6 +1,6 @@
 export default function SigninBox() {
   return (
-    <div className="max-w-md mx-auto mt-10 shadow-xl bg-white py-8 px-6 rounded-lg">
+    <div className="max-w-md mx-auto shadow-2xl py-8 px-6 rounded-lg">
       <h3 className="text-3xl font-bold text-center mb-6">
         Login
       </h3>

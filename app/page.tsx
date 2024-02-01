@@ -8,9 +8,9 @@ import Image from 'next/image'
 
 export default function Home() {
   return (
-    <div className='flex flex-col items-center justify-center'>
-      <div className='w-full flex items-center justify-center'>
-        <div className='flex flex-col items-center max-w-[2000px]'>
+    <div className='flex flex-col items-center w-full mx-auto'>
+      <div className='w-full flex items-center'>
+        <div className='flex flex-col gap-7 items-center max-w-5xl mx-auto'>
           <NavBar />
           <ImageInput />
         </div>
@@ -22,7 +22,6 @@ export default function Home() {
         width={4000}
         height={500}
       />
-
       <div className="flex flex-col items-center justify-center p-10 max-w-[1000px]">
         <p className="text-2xl font-bold">Free URL Shortener and Branded URLs</p>
         <p className="text-2xl font-bold">with Great Analytics Tools</p>
