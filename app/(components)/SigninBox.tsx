@@ -9,14 +9,14 @@ export default function SigninBox() {
         <label htmlFor="name" className="text-base font-semibold block">
           Email or Username
         </label>
-        <input type="text" name="email" id="name" placeholder="Enter your email or username" className="w-full px-4 py-2 border rounded-md focus:outline-none focus:border-blue-500" />
+        <input type="text" name="email" id="name" placeholder="Enter your email or username" className="w-full px-4 py-2 border rounded-full focus:outline-none focus:border-blue-500" />
       </div>
 
       <div className="mb-4 flex flex-col gap-3">
         <label htmlFor="password" className="text-base font-semibold block">
           Password
         </label>
-        <input type="password" name="password" id="password" placeholder="Enter your password" className="w-full px-4 py-2 border rounded-md focus:outline-none focus:border-blue-500" />
+        <input type="password" name="password" id="password" placeholder="Enter your password" className="w-full px-4 py-2 border rounded-full focus:outline-none focus:border-blue-500" />
       </div>
 
       <button type="submit" className="mt-6 bg-blue-500 text-white py-2 px-4 rounded-full w-full flex items-center justify-center">
