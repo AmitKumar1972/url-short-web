@@ -1,4 +1,4 @@
-import { TrashIcon } from "@heroicons/react/16/solid";
+
 import DashboardSidebar from "../(components)/DashboardSidebar";
 
 const dummyLinks = [
@@ -27,13 +27,15 @@ const dummyLinks = [
 
 export default function Dashboard() {
   return (
-    <div className="flex gap-12">
-      <DashboardSidebar />
-      <div className="w-full mt-10 flex flex-col mr-9">
+    <div className="flex">
+      <div className="min-w-[60px] lg:min-w-[200px]">
+        <DashboardSidebar />
+      </div>
 
+      <div className="w-full mt-10 flex flex-col px-6">
         <div className="text-2xl font-bold">My Links</div>
 
-        <div className="flex gap-4 mt-4">
+        <div className="flex gap-4 mt-4 flex-col md:flex-row">
           {/* First Div */}
           <div className="flex p-6 rounded-md border shadow">
             <div className="flex items-center justify-center gap-6">
