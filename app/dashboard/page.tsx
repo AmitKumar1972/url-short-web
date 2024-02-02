@@ -28,7 +28,7 @@ const dummyLinks = [
 export default function Dashboard() {
   return (
     <div className="flex">
-      <div className="min-w-[60px] lg:min-w-[200px]">
+      <div className="hidden sm:block sm:min-w-[60px] lg:min-w-[200px]">
         <DashboardSidebar />
       </div>
 

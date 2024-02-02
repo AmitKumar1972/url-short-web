@@ -8,21 +8,21 @@ export default function DashboardSidebar() {
       {/* For upper part */}
       <div className="flex flex-col gap-1 py-4 lg:mx-6">
         <p className="text-xl font-bold hidden lg:block">Dashly</p>
-        <div className="flex gap-1 md:justify-center lg:justify-start">
+        <div className="flex gap-1 sm:justify-center lg:justify-start">
           <p className="text-sm text-slate-600 hidden lg:block">powered By</p>
           <Image
             src="/logo5.svg"
             width={20}
             height={20}
             alt="Logo"
-            className="lg:w-6 lg:h-6 md:w-8 md:h-8"
+            className="lg:w-6 lg:h-6 sm:w-8 sm:h-8"
           />
         </div>
       </div>
 
       {/* For links and settings button */}
-      <div className="flex flex-col w-full mt-10 md:items-center lg:items-start">
-        <div className="flex gap-5 hover:bg-blue-100 py-3 hover:cursor-pointer lg:px-6">
+      <div className="flex flex-col w-full mt-10 sm:items-center lg:items-start">
+        <div className="flex gap-5 hover:bg-blue-100 py-3 hover:cursor-pointer lg:px-6 w-full sm:justify-center lg:justify-start">
           <Image
             src="/final-link.png"
             width={25}
@@ -32,7 +32,7 @@ export default function DashboardSidebar() {
           <span className="hidden lg:block font-normal">My Links</span>
         </div>
 
-        <div className="flex gap-5 hover:bg-blue-100 py-3 hover:cursor-pointer lg:px-6">
+        <div className="flex gap-5 hover:bg-blue-100 py-3 hover:cursor-pointer lg:px-6 w-full sm:justify-center lg:justify-start">
           <Image
             src="/settings.png"
             width={25}
@@ -46,7 +46,7 @@ export default function DashboardSidebar() {
       <div className="flex-grow"></div>
 
       {/* For user profile */}
-      <div className="flex gap-2 items-center lg:px-6 py-3 cursor-pointer md:justify-center lg:justify-start">
+      <div className="flex gap-2 items-center lg:px-6 py-3 cursor-pointer sm:justify-center lg:justify-start">
         <Image
           src="/profile-image.jpg"
           alt="User Profile"
