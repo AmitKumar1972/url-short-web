@@ -10,10 +10,9 @@ export default function ImageInput() {
   const [shortenedUrl, setShortenedUrl] = useState('');
 
   const handleShorten = async (e: React.MouseEvent<HTMLButtonElement>) => {
-    e.preventDefault()
+    e.preventDefault();
     try {
-      console.log('aaya');
-      const response = await fetch('http://localhost:4000/url/shorten', {
+      const response = await fetch('http://localhost:4000/shorten', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json'
