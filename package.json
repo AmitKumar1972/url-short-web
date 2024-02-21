@@ -10,13 +10,16 @@
   },
   "dependencies": {
     "@heroicons/react": "^2.1.1",
+    "axios": "^1.6.7",
     "next": "14.0.3",
+    "ramda": "^0.29.1",
     "react": "^18",
     "react-dom": "^18",
-    "react-toastify": "^10.0.4"
+    "react-hot-toast": "^2.4.1"
   },
   "devDependencies": {
     "@types/node": "^20",
+    "@types/ramda": "^0.29.10",
     "@types/react": "^18",
     "@types/react-dom": "^18",
     "autoprefixer": "^10.0.1",

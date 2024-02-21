@@ -12,10 +12,6 @@ export default function SignupBox() {
   const handleSubmit = async (e: any) => {
     e.preventDefault();
 
-    console.log(name)
-    console.log(username)
-    console.log(password)
-
     // Validation
     if (!name || !username || !password) {
       // Handle validation error (show an error message, etc.)

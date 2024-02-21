@@ -1,8 +1,9 @@
 "use client"
 import Image from "next/image";
-import { ToastContainer, toast } from 'react-toastify';
-import 'react-toastify/dist/ReactToastify.css';
 import { useState } from "react";
+import toast, { Toaster } from "react-hot-toast";
+import axios from "axios";
+import { getUrlShortenQuery } from "../utils/helper";
 
 export default function ImageInput() {
 
@@ -12,19 +13,15 @@ export default function ImageInput() {
   const handleShorten = async (e: React.MouseEvent<HTMLButtonElement>) => {
     e.preventDefault();
     try {
-      const response = await fetch('http://localhost:4000/shorten', {
-        method: 'POST',
-        headers: {
-          'Content-Type': 'application/json'
-        },
-        body: JSON.stringify({ url: inputValue })
-      });
+      const response = await axios.post(getUrlShortenQuery(), { url: inputValue });
 
-      if (!response.ok) {
+      console.log(response)
+
+      if (response.status !== 200 && response.status !== 201) {
         throw new Error('Failed to shorten URL');
       }
 
-      const responseData = await response.json();
+      const responseData = await response.data;
       setShortenedUrl(responseData.shortUrl);
       console.log('Response Data:', responseData);
     } catch (error) {
@@ -89,7 +86,7 @@ export default function ImageInput() {
                   Copy
                 </button>
               </div>
-              <ToastContainer />
+              <Toaster />
             </div>
           </div>
         ) : (
