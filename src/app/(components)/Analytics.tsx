@@ -2,8 +2,8 @@ import Image from "next/image";
 
 export default function Analytics() {
   return (
-    <div className="flex flex-row gap-6 mt-5 flex-wrap ">
-      <div className="flex flex-row border justify-center items-center shadow-lg pl-4 py-2 rounded-lg pr-16 min-w-[250px] gap-2">
+    <div className="flex flex-row gap-6 mt-5 flex-wrap">
+      <div className="flex flex-row border justify-start items-center shadow-lg px-2 py-2 rounded-lg min-w-[270px] gap-2">
         <Image
           src="/Icon.png"
           width={60}
@@ -16,7 +16,7 @@ export default function Analytics() {
         </div>
       </div>
 
-      <div className="flex flex-row border justify-center items-center shadow-lg pl-4 pr-16 py-2 rounded-lg min-w-[250px] gap-2">
+      <div className="flex flex-row border justify-start items-center shadow-lg px-2 py-2 rounded-lg min-w-[250px] gap-2">
         <Image
           src="/Icon-1.png"
           width={60}
@@ -30,7 +30,7 @@ export default function Analytics() {
       </div>
 
       {/* Create short link wala div */}
-      <div className="shadow-lg border pl-4 pr-16 py-2 rounded-lg">
+      <div className="flex flex-col shadow-lg border px-2 py-2 rounded-lg min-w-[270px]">
         <h2 className="text-lg font-semibold mb-2">Create New Link</h2>
         <div className="flex gap-4">
           <input
