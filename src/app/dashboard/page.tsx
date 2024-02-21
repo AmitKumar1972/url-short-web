@@ -1,8 +1,8 @@
 
 import { redirect } from "next/navigation";
-import Analytics from "../(components)/Analytics";
-import DashboardSidebar from "../(components)/DashboardSidebar";
-import LinksTable from "../(components)/LinksTable";
+import Analytics from "../../components/Analytics";
+import DashboardSidebar from "../../components/DashboardSidebar";
+import LinksTable from "../../components/LinksTable";
 
 export default async function Dashboard() {
   return (

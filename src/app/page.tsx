@@ -1,9 +1,9 @@
-import NavBar from './(components)/navbar'
-import ImageInput from './(components)/ImageInput'
-import ThreeBox from './(components)/ThreeBox'
-import LowContent from './(components)/LowContent'
-import LowContent2 from './(components)/LowContent2'
-import Footer from './(components)/Footer'
+import NavBar from './../components/navbar'
+import ImageInput from './../components/ImageInput'
+import ThreeBox from './../components/ThreeBox'
+import LowContent from './../components/LowContent'
+import LowContent2 from './../components/LowContent2'
+import Footer from './../components/Footer'
 import Image from 'next/image'
 
 export default function Home() {

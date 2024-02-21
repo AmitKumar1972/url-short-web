@@ -1,6 +1,6 @@
 import Image from "next/image";
-import NavBar from "../(components)/navbar";
-import SignBox from "../(components)/SigninBox";
+import NavBar from "../../components/navbar";
+import SignBox from "../../components/SigninBox";
 
 export default function signin() {
   return (

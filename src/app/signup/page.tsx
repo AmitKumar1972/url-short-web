@@ -1,6 +1,6 @@
 import Image from "next/image";
-import NavBar from "../(components)/navbar";
-import SignupBox from "../(components)/SignupBox";
+import NavBar from "../../components/navbar";
+import SignupBox from "../../components/SignupBox";
 
 export default function signup() {
   return (
